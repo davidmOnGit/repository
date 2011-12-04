@@ -12,9 +12,9 @@
 </head>
 <body>
 	<ui:composition template="/WEB-INF/template/mainpage.xhtml">
-		<!-- >ui:define name="einfachRein"></ui:define-->
+		<ui:define name="einfachRein">kein standardtext mehr</ui:define>
 	<h:form>
-		<h:commandButton action="#{controllerBean.killAllEnemys}" value="rumms" />
+		<h:commandButton action="#{controllerBean.killAllEnemys()}" value="rumms" />
 	</h:form>
 	</ui:composition>
 </body>
