@@ -5,6 +5,9 @@
   <param-name>javax.faces.CONFIG_FILES</param-name>
   <param-value>/WEB-INF/faces-config.xml</param-value>
  </context-param>
+ <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
  <servlet>
   <display-name>Faces Servlet</display-name>
   <servlet-name>Faces Servlet</servlet-name>

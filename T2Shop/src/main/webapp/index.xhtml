@@ -12,10 +12,13 @@
 </head>
 <body>
 	<ui:composition template="/WEB-INF/template/mainpage.xhtml">
-		<ui:define name="einfachRein">kein standardtext mehr</ui:define>
+		<ui:define name="einfachRein">
+		<h:outputText value="#{controllerBean.firstBean.beanProp}" />
+		</ui:define>
 	<h:form>
 		<h:commandButton action="#{controllerBean.killAllEnemys()}" value="rumms" />
 	</h:form>
 	</ui:composition>
+	XXX
 </body>
 </html>
