@@ -12,12 +12,15 @@
 </head>
 <body>
 	<ui:composition template="/WEB-INF/template/mainpage.xhtml">
-		<ui:define name="einfachRein">
-		<h:outputText value="#{controllerBean.}" />
-		<h:outputText value="#{controllerBean.name}" />
-		<h:commandButton action="#{controllerBean.killAllEnemys()}" value="rumms" />
+			<ui:define name="einfachRein">
+			<h:form>
+				<h:inputText label="Vorname:" value="#{controllerBean.vorname}" />
+				<h:inputText label="Nachname:" value="#{controllerBean.nachname}" />
+
+				<h:commandButton action="#{controllerBean.addKunde()}"
+					value="registriereKunde" />
+			</h:form>
 		</ui:define>
 	</ui:composition>
-	XXX
 </body>
 </html>
