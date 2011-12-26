@@ -11,13 +11,7 @@
 <body>
 	<ui:composition template="WEB-INF/template/skelleton.xhtml">
 		<ui:define name="mainContent">
-			<h:form>
-				<h:inputText label="Vorname:" value="#{controllerBean.vorname}" />
-				<h:inputText label="Nachname:" value="#{controllerBean.nachname}" />
-
-				<h:commandButton action="#{controllerBean.addKunde()}"
-					value="registriereKunde" />
-			</h:form>
+			<p>Na herzlich Willkommen im Headshop</p>
 		</ui:define>
 	</ui:composition>
 </body>
