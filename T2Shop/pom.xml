@@ -58,13 +58,9 @@
 		</dependency>
 		<dependency>
 			<groupId>hibernate</groupId>
-			<artifactId>hibernate-annotations</artifactId>
-			<version>3.1beta4</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>ejb</artifactId>
-			<version>3.0-public_review</version>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.4.0.GA</version>
+			<type>pom</type>
 		</dependency>
 	</dependencies>
 </project>
