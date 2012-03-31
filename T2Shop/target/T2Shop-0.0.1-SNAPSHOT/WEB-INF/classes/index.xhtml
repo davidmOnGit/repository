@@ -13,7 +13,10 @@
 		<ui:define name="mainContent">
 			<p>Na herzlich Willkommen im Headshop. Das sind die neusten Neuheiten, die wir letztens hereinbekommen haben:</p>
 			
-		#{productDataBean.produktManager.testeAnnotationBasedSpring()}XXX
+			
+		<h:form>
+		<h:commandButton action="#{productDataBean.produktManager.testeAnnotationBasedSpring()}" value="go" />
+		</h:form>
 		</ui:define>
 	</ui:composition>
 </body>
